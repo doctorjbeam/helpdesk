@@ -73,17 +73,13 @@ $negorder=$order=='DESC'?'ASC':'DESC'; //Negate the sorting..
     <?}?>
 </div>
 <div style="margin: 10px 0 60px 0;">
- <table width="100%" border="0" cellspacing=0 cellpadding=0 align="center">
-    <tr>
-        <td width="60%" class="msg"><?=$showing?>&nbsp;&nbsp;<?=$results_type?></td>
-        <td nowrap >
-            <a href="view.php?status=open"><img src="images/view_open_btn.gif" alt="View Open" border=0></a>            
-            <a href="view.php?status=closed"><img src="images/view_closed_btn.gif" alt="View Closed" border=0></a>            
-            <a href=""><img src="images/refresh_btn.gif" alt="Refresh" border=0></a>
-        </td>
-    </tr>
- </table>
- <table width="100%" border="0" cellspacing=0 cellpadding=2>
+	<div class="floatRight">
+		<a href="view.php?status=open" class="buttonText">View Open</a>            
+		<a href="view.php?status=closed" class="buttonText">View Closed</a>            
+		<a href="" class="buttonText">Refresh</a>
+	</div>
+	<h1><?php echo str_replace("&nbsp;&nbsp;", " ", $showing); ?><?=$results_type?></h1>
+ <table width="100%" border="0" cellspacing="0" cellpadding="2" style="margin-top: 1em; ">
     <tr><td>
      <table border="0" cellspacing=0 cellpadding=2 class="tgrid" align="center">
         <tr>

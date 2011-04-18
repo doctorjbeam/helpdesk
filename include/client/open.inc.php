@@ -12,7 +12,8 @@ $info=($_POST && $errors)?Format::input($_POST):array(); //on error...use the po
         <p id="warnmessage"><?=$warn?></p>
     <?}?>
 </div>
-<div>Please fill in the form below to open a new ticket.</div><br>
+<h1>Create a new ticket</h1>
+<p><em>Please fill in the form below to open a new ticket.</em></p>
 <form action="open.php" method="POST" enctype="multipart/form-data">
 <table align="left" cellpadding=2 cellspacing=1 width="90%">
     <tr>
@@ -45,7 +46,7 @@ $info=($_POST && $errors)?Format::input($_POST):array(); //on error...use the po
              &nbsp;Ext&nbsp;<input type="text" name="phone_ext" size="6" value="<?=$info['phone_ext']?>">
             &nbsp;<font class="error">&nbsp;<?=$errors['phone']?></font></td>
     </tr>
-    <tr height=2px><td align="left" colspan=2 >&nbsp;</td</tr>
+    <tr height=2px><td align="left" colspan=2 >&nbsp;</td></tr>
     <tr>
         <th>Help Topic:</th>
         <td>
@@ -121,7 +122,7 @@ $info=($_POST && $errors)?Format::input($_POST):array(); //on error...use the po
         </td>
     </tr>
     <?}?>
-    <tr height=2px><td align="left" colspan=2 >&nbsp;</td</tr>
+    <tr height=2px><td align="left" colspan=2 >&nbsp;</td></tr>
     <tr>
         <td></td>
         <td>

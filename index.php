@@ -26,22 +26,21 @@ require(CLIENTINC_DIR.'header.inc.php');
 ?>
 <div id="index">
 <h1>Welcome to the support center</h1>
-<p class="big">In order to streamline support requests and better serve you, we utilize a support ticket system. Every support request is assigned a unique ticket number which you can use to track the progress and responses online. For your reference we provide complete archives and history of all your support requests. A valid email address is required.</p>
+<p>In order to streamline support requests and better serve you, we utilize a support ticket system. Every support request is assigned a unique ticket number which you can use to track the progress and responses online. For your reference we provide complete archives and history of all your support requests. A valid email address is required.</p>
 <hr />
 <br />
 <div class="lcol">
   <img src="./images/new_ticket_icon.jpg" width="48" height="48" align="left" style="padding-bottom:150px;">
-  <h3>Open A New Ticket</h3>
-  Please provide as much detail as possible so we can best assist you. To update a previously submitted ticket, please use the form to the right.
-  <br /><br />
+  <h2>Open A New Ticket</h2>
+  <p>Please provide as much detail as possible so we can best assist you. To update a previously submitted ticket, please use the form to the right.</p>
   <form method="link" action="open.php">
   <input type="submit" class="button2" value="Open New Ticket">
   </form>
 </div>
 <div class="rcol">
   <img src="./images/ticket_status_icon.jpg" width="48" height="48" align="left" style="padding-bottom:150px;">
-  <h3>Check Ticket Status</h3>We provide archives and history of all your support requests complete with responses.
-  <br /><br />
+  <h2>Check Ticket Status</h2>
+  <p>We provide archives and history of all your support requests complete with responses.</p>
   <form class="status_form" action="login.php" method="post">
     <fieldset>
       <label>Email:</label>

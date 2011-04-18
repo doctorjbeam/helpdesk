@@ -371,14 +371,10 @@ $basic_display=!isset($_REQUEST['advance_search'])?true:false;
 </script>
 <!-- SEARCH FORM END -->
 <div style="margin-bottom:20px">
- <table width="100%" border="0" cellspacing=0 cellpadding=0 align="center">
-    <tr>
-        <td width="80%" class="msg" >&nbsp;<b><?=$showing?>&nbsp;&nbsp;&nbsp;<?=$results_type?></b></td>
-        <td nowrap style="text-align:right;padding-right:20px;">
-            <a href=""><img src="images/refresh.gif" alt="Refresh" border=0></a>
-        </td>
-    </tr>
- </table>
+<div class="floatRight">
+	<a href="" class="buttonText" style="position: relative; top: 14px; right: 4px; ">Refresh</a>
+</div>
+<h1><?=$showing?>&nbsp;&nbsp;&nbsp;<?=$results_type?></h1>
  <table width="100%" border="0" cellspacing=1 cellpadding=2>
     <form action="tickets.php" method="POST" name='tickets' onSubmit="return checkbox_checker(this,1,0);">
     <input type="hidden" name="a" value="mass_process" >
@@ -423,7 +419,7 @@ $basic_display=!isset($_REQUEST['advance_search'])?true:false;
                 ?>
             <tr class="<?=$class?> " id="<?=$row['ticket_id']?>">
                 <?if($canDelete || $canClose) {?>
-                <td align="center" class="nohover">
+                <td align="center" class="nohover" width="20">
                     <input type="checkbox" name="tids[]" value="<?=$row['ticket_id']?>" onClick="highLight(this.value,this.checked);">
                 </td>
                 <?}?>

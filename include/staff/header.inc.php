@@ -30,7 +30,7 @@ if($sysnotice){?>
 }?>
 <div id="container">
     <div id="header">
-        <a id="logo" href="index.php" title="osTicket"><img src="images/ostlogo.jpg" width="188" height="72" alt="osTicket"></a>
+        <h1><a id="logo" href="index.php" title="osTicket">osTicket</a></h1>
         <p id="info">Welcome back, <strong><?=$thisuser->getUsername()?></strong> 
            <?php
             if($thisuser->isAdmin() && !defined('ADMINPAGE')) { ?>
