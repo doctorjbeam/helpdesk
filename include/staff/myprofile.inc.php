@@ -2,7 +2,7 @@
 if(!defined('OSTSCPINC') || !is_object($thisuser)) die('Kwaheri');
 
 ?>
-<div class="msg">My Profile Info</div>
+<h1>My Profile Info</h1>
 <table width="100%" border="0" cellspacing=0 cellpadding=2>
  <form action="profile.php" method="post">
  <input type="hidden" name="t" value="info">

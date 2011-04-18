@@ -148,7 +148,7 @@
 
     if($ferror){ //Fatal error
         Sys::alertAdmin('osTicket Fatal Error',$ferror); //try alerting admin.
-        die("<b>Fatal Error:</b> Contact system adminstrator."); //Generic error.
+        die("<b>Fatal Error:</b> Contact system adminstrator.<br>".$ferror); //Generic error.
         exit;
     }
     //Init
